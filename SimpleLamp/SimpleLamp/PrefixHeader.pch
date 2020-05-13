@@ -1,0 +1,80 @@
+//
+//  PrefixHeader.pch
+//  SimpleLamp
+//
+//  Created by chen on 2020/5/10.
+//  Copyright © 2020 chen. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+//版本号
+#define CURRENT_APP_DOT_VERSION         @"1.5.0"
+#define CURRENT_APP_VERSION             @"0150"
+#define INT_CURRENT_APP_VERSION         @"150"
+
+
+//服务器地址
+#define ServerEnvironment 1
+#define ServerEnvironment_Development 0
+#define ServerEnvironment_Release 1
+
+
+#if (ServerEnvironment == ServerEnvironment_Development)
+
+#define baseUrl                     @"http://test.api.sentuli.com:1080/hj"
+#define merchantUrl                 @"http://test.api.sentuli.com:1080/merchant"
+#define iphone_md5_key              @"m984u9setpfr9y71huhd6gxyz6710m87"
+#define anthorizeTokenUrl           @"http://test.api.sentuli.com:1080"
+
+
+#elif (ServerEnvironment == ServerEnvironment_Release)
+
+#define baseUrl                     @"https://api.sentuli.com/hj"
+#define merchantUrl                 @"https://api.sentuli.com/merchant"
+#define iphone_md5_key              @"ef449jg9h98gy94hfi4u4hfo4fpqmzs0"
+#define anthorizeTokenUrl           @"https://api.sentuli.com"
+
+
+#else
+#error 服务器连接未知
+#endif
+
+
+
+
+
+/**头文件引入*/
+#import "HMConfig.h"
+#import "AppDelegate.h"
+#import "BaseTableViewCell.h"
+#import "HMViewController.h"
+
+#import "HMCityDataManager.h"
+#import "HMUserManager.h"
+
+#import <YYModel/YYModel.h>
+#import <CYLTabBarController/CYLTabBarController.h>
+
+
+//颜色
+#define Nav_Color                   RGB_COLOR_String(@"866343")  //导航栏通用颜色
+#define Tabbar_Color                RGB_COLOR_String(@"ffffff")  //tabbar通用颜色
+#define CommonBGView_Color          RGB_COLOR_String(@"F4F4F4")  //view通用背景色
+#define TableSeparatorLineColor     RGB_COLOR_String(@"e1e1e1")  //用于项目中单线条颜色（tableView分割线颜色）
+
+//字体颜色
+#define TextColor_1     RGB_COLOR_String(@"222222")  //通用字体颜色：深黑色
+#define TextColor_2     RGB_COLOR_String(@"666666")  //通用字体颜色：浅黑色
+#define TextColor_3     RGB_COLOR_String(@"aeaeae")  //通用字体颜色：浅浅黑色
+#define TextColor_red   RGB_COLOR_String(@"fe5c60")  //通用字体颜色：tabbar红色
+#define TextColor_blue  RGB_COLOR_String(@"219bff")  //通用字体颜色：浅蓝色
+#define TextColor_brown       RGB_COLOR_String(@"866343") //通用字体颜色：棕色
+
+
+
+
+
+#endif /* PrefixHeader_pch */

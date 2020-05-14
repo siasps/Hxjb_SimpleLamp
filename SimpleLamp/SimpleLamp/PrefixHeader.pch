@@ -68,10 +68,10 @@
 //字体颜色
 #define TextColor_1     RGB_COLOR_String(@"222222")  //通用字体颜色：深黑色
 #define TextColor_2     RGB_COLOR_String(@"666666")  //通用字体颜色：浅黑色
-#define TextColor_3     RGB_COLOR_String(@"aeaeae")  //通用字体颜色：浅浅黑色
+#define TextColor_3     RGB_COLOR_String(@"#999999")  //通用字体颜色：浅浅黑色
 #define TextColor_red   RGB_COLOR_String(@"fe5c60")  //通用字体颜色：tabbar红色
 #define TextColor_blue  RGB_COLOR_String(@"219bff")  //通用字体颜色：浅蓝色
-#define TextColor_brown       RGB_COLOR_String(@"866343") //通用字体颜色：棕色
+#define TextColor_yellow       RGB_COLOR_String(@"#F6B53E") //通用字体颜色：黄色
 
 
 

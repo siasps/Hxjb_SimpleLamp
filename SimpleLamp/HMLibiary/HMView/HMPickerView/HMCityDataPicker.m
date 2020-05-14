@@ -70,7 +70,7 @@
     [_backView setOriginY:SCREEN_HEIGHT];
     
     [UIView animateWithDuration:0.3 animations:^{
-        [_backView setOriginY:SCREEN_HEIGHT-SCREEN_BOTTOM_HEIGHT-40-216];
+        [self.backView setOriginY:SCREEN_HEIGHT-SCREEN_BOTTOM_HEIGHT-40-216];
     } completion:^(BOOL finished) {
         
     }];
@@ -79,7 +79,7 @@
 - (void)dismissPicker{
     
     [UIView animateWithDuration:0.3 animations:^{
-        [_backView setOriginY:SCREEN_HEIGHT];
+        [self.backView setOriginY:SCREEN_HEIGHT];
     } completion:^(BOOL finished) {
         self.hidden = YES;
         [self removeFromSuperview];

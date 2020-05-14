@@ -275,7 +275,7 @@
     aWidth *= _maskViewZoomScale;
     aHeight *= _maskViewZoomScale;
     
-    CGFloat screenScale = [UIScreen mainScreen].scale;
+    //CGFloat screenScale = [UIScreen mainScreen].scale;
     
 #ifdef DEBUG
     NSLog(@"%f--%f", _image.size.width, _image.size.height);

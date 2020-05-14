@@ -270,9 +270,9 @@ static BOOL               isNoPositionShow = NO;
         
         for (CLPlacemark *placeMark in placemarks) {
             
-            NSDictionary *addressDic = placeMark.addressDictionary;
+            //NSDictionary *addressDic = placeMark.addressDictionary;
             //NSString *state=[addressDic objectForKey:@"State"];
-            NSString *city=[addressDic objectForKey:@"City"];
+            //NSString *city=[addressDic objectForKey:@"City"];
             //NSString *subLocality=[addressDic objectForKey:@"SubLocality"];
             //NSString *street=[addressDic objectForKey:@"Street"];
             //NSLog(@"所在城市====%@ %@ %@ %@", state, city, subLocality, street);

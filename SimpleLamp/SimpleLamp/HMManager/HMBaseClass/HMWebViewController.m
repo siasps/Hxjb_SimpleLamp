@@ -292,7 +292,7 @@
                     NSArray *orderGoods = [[resultList firstObject] valueObjectForKey:@"orderGoods"];
                     
                     if (orderGoods.count > 0) {
-                        NSDictionary *goodsDict = [orderGoods firstObject];
+                        //NSDictionary *goodsDict = [orderGoods firstObject];
                         //[HMShareManager shareWithGoodsDict:goodsDict];
                         return ;
                     }

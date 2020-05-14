@@ -14,7 +14,7 @@
 #import "LampPlusSubButton.h"
 
 
-static CGFloat const CYLTabBarControllerHeight = 40.f;
+//static CGFloat const CYLTabBarControllerHeight = 40.f;
 #define RANDOM_COLOR [UIColor colorWithHue: (arc4random() % 256 / 256.0) saturation:((arc4random()% 128 / 256.0 ) + 0.5) brightness:(( arc4random() % 128 / 256.0 ) + 0.5) alpha:1]
 
 
@@ -125,8 +125,8 @@ static CGFloat const CYLTabBarControllerHeight = 40.f;
     CGFloat secondXOffset = (-25+2)/2;
     NSDictionary *secondTabBarItemsAttributes = @{
                                                   CYLTabBarItemTitle : @"全屋记",
-                                                  CYLTabBarItemImage : [UIImage imageNamed:@"fishpond_normal"],
-                                                  CYLTabBarItemSelectedImage : @"fishpond_highlight",
+                                                  CYLTabBarItemImage : [UIImage imageNamed:@"house_normal"],
+                                                  CYLTabBarItemSelectedImage : @"house_highlight",
                                                   CYLTabBarItemTitlePositionAdjustment: [NSValue valueWithUIOffset:UIOffsetMake(secondXOffset, -3.5)]
                                                   };
     

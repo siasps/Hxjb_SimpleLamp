@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74532138246D7E81008C8D47 /* HMHomeDiscoveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74532137246D7E81008C8D47 /* HMHomeDiscoveryController.m */; };
+		7453213C246D89FC008C8D47 /* HMHomeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7453213B246D89FC008C8D47 /* HMHomeCollectionCell.m */; };
 		74BBB9492469863A00C3995F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BBB9482469863A00C3995F /* AppDelegate.m */; };
 		74BBB9522469863A00C3995F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BBB9502469863A00C3995F /* Main.storyboard */; };
 		74BBB9542469863E00C3995F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BBB9532469863E00C3995F /* Assets.xcassets */; };
@@ -127,6 +129,10 @@
 
 /* Begin PBXFileReference section */
 		1D6FEF20583684A7A47DB670 /* Pods-SimpleLamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleLamp.debug.xcconfig"; path = "Target Support Files/Pods-SimpleLamp/Pods-SimpleLamp.debug.xcconfig"; sourceTree = "<group>"; };
+		74532136246D7E81008C8D47 /* HMHomeDiscoveryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMHomeDiscoveryController.h; sourceTree = "<group>"; };
+		74532137246D7E81008C8D47 /* HMHomeDiscoveryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMHomeDiscoveryController.m; sourceTree = "<group>"; };
+		7453213A246D89FC008C8D47 /* HMHomeCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMHomeCollectionCell.h; sourceTree = "<group>"; };
+		7453213B246D89FC008C8D47 /* HMHomeCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMHomeCollectionCell.m; sourceTree = "<group>"; };
 		74BBB9442469863A00C3995F /* SimpleLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BBB9472469863A00C3995F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74BBB9482469863A00C3995F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -361,6 +367,15 @@
 				7D1AFFEE701AD1A949CBE9A6 /* Pods-SimpleLamp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		74532139246D89A4008C8D47 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7453213A246D89FC008C8D47 /* HMHomeCollectionCell.h */,
+				7453213B246D89FC008C8D47 /* HMHomeCollectionCell.m */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		74BBB93B2469863A00C3995F = {
@@ -937,6 +952,9 @@
 			children = (
 				74BBBAC6246ADAB100C3995F /* HMHomeViewController.h */,
 				74BBBAC7246ADAB100C3995F /* HMHomeViewController.m */,
+				74532136246D7E81008C8D47 /* HMHomeDiscoveryController.h */,
+				74532137246D7E81008C8D47 /* HMHomeDiscoveryController.m */,
+				74532139246D89A4008C8D47 /* views */,
 			);
 			path = HMHome;
 			sourceTree = "<group>";
@@ -1113,6 +1131,7 @@
 				74BBBA682469879700C3995F /* CHTCollectionViewWaterfallCell.m in Sources */,
 				74BBBAA42469879800C3995F /* UIDevice+KIAdditions.m in Sources */,
 				74BBBA952469879700C3995F /* UIImage+KIAdditions.m in Sources */,
+				74532138246D7E81008C8D47 /* HMHomeDiscoveryController.m in Sources */,
 				74BBBA512469879700C3995F /* HMCityDataModel.m in Sources */,
 				74BBBA6A2469879700C3995F /* CHTCollectionViewWaterfallHeader.m in Sources */,
 				74BBBA452469879700C3995F /* HMFileCacheManager.m in Sources */,
@@ -1122,6 +1141,7 @@
 				74BBBA482469879700C3995F /* HMHttpCacheDBManager.m in Sources */,
 				74BBBA642469879700C3995F /* HMLumpView.m in Sources */,
 				74BBBA602469879700C3995F /* ZYBannerView.m in Sources */,
+				7453213C246D89FC008C8D47 /* HMHomeCollectionCell.m in Sources */,
 				74BBBA972469879800C3995F /* UIColor+KIAdditions.m in Sources */,
 				74BBBA782469879700C3995F /* FMDatabase.m in Sources */,
 				74BBBABD246999B500C3995F /* HMCityDataManager.m in Sources */,

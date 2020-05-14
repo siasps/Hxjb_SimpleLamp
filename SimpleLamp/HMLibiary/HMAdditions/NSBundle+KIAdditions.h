@@ -39,7 +39,7 @@
 
 
 /*检查新版本  开始*/
-+ (void)checkVersionWithAppleID:(NSString *)appleID showNewestMsg:(BOOL)showMsg;
+//+ (void)checkVersionWithAppleID:(NSString *)appleID showNewestMsg:(BOOL)showMsg;
 
 
 @end

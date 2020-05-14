@@ -209,8 +209,8 @@
 
 - (void)show{
     [UIView animateWithDuration:0.3 animations:^{
-        _blackBackgroundButton.alpha = 0.3;
-        _animationView.frame = CGRectMake(0, SCREEN_HEIGHT-SCREEN_BOTTOM_HEIGHT-PickerHeight-50, SCREEN_WIDTH, PickerHeight+50+SCREEN_BOTTOM_HEIGHT);
+        self->_blackBackgroundButton.alpha = 0.3;
+        self->_animationView.frame = CGRectMake(0, SCREEN_HEIGHT-SCREEN_BOTTOM_HEIGHT-PickerHeight-50, SCREEN_WIDTH, PickerHeight+50+SCREEN_BOTTOM_HEIGHT);
     } completion:^(BOOL finished) {
         
     }];
@@ -226,8 +226,8 @@
     }
     
     [UIView animateWithDuration:0.3 animations:^{
-        _blackBackgroundButton.alpha = 0;
-        _animationView.frame = CGRectOffset(self.frame, 0, self.frame.size.height);
+        self.blackBackgroundButton.alpha = 0;
+        self.animationView.frame = CGRectOffset(self.frame, 0, self.frame.size.height);
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
     }];
@@ -243,8 +243,8 @@
     }
     
     [UIView animateWithDuration:0.3 animations:^{
-        _blackBackgroundButton.alpha = 0;
-        _animationView.frame = CGRectOffset(self.frame, 0, self.frame.size.height);
+        self.blackBackgroundButton.alpha = 0;
+        self.animationView.frame = CGRectOffset(self.frame, 0, self.frame.size.height);
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
     }];

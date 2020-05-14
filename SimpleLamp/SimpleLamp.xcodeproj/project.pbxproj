@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		74BBB9492469863A00C3995F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BBB9482469863A00C3995F /* AppDelegate.m */; };
-		74BBB94F2469863A00C3995F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BBB94E2469863A00C3995F /* ViewController.m */; };
 		74BBB9522469863A00C3995F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BBB9502469863A00C3995F /* Main.storyboard */; };
 		74BBB9542469863E00C3995F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BBB9532469863E00C3995F /* Assets.xcassets */; };
 		74BBB9572469863E00C3995F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BBB9552469863E00C3995F /* LaunchScreen.storyboard */; };
@@ -131,8 +130,6 @@
 		74BBB9442469863A00C3995F /* SimpleLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BBB9472469863A00C3995F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74BBB9482469863A00C3995F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		74BBB94D2469863A00C3995F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		74BBB94E2469863A00C3995F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		74BBB9512469863A00C3995F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74BBB9532469863E00C3995F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74BBB9562469863E00C3995F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -390,8 +387,6 @@
 			children = (
 				74BBB9472469863A00C3995F /* AppDelegate.h */,
 				74BBB9482469863A00C3995F /* AppDelegate.m */,
-				74BBB94D2469863A00C3995F /* ViewController.h */,
-				74BBB94E2469863A00C3995F /* ViewController.m */,
 				74BBBABE246AD40000C3995F /* LampTabBarViewController.h */,
 				74BBBABF246AD40000C3995F /* LampTabBarViewController.m */,
 				A0D08476246BBB520043CFD9 /* LampPlusSubButton.h */,
@@ -1126,7 +1121,6 @@
 				74BBBAA02469879800C3995F /* NSString+KIAdditions.m in Sources */,
 				74BBBA482469879700C3995F /* HMHttpCacheDBManager.m in Sources */,
 				74BBBA642469879700C3995F /* HMLumpView.m in Sources */,
-				74BBB94F2469863A00C3995F /* ViewController.m in Sources */,
 				74BBBA602469879700C3995F /* ZYBannerView.m in Sources */,
 				74BBBA972469879800C3995F /* UIColor+KIAdditions.m in Sources */,
 				74BBBA782469879700C3995F /* FMDatabase.m in Sources */,

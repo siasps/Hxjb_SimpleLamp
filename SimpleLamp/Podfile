@@ -15,6 +15,7 @@ pod 'CYLTabBarController', '~> 1.29.0'
 pod 'MJExtension'
 #pod 'ZJScrollPageView'
 pod 'CHTCollectionViewWaterfallLayout'
+pod 'FLAnimatedImage', '~> 1.0'
 
 
 

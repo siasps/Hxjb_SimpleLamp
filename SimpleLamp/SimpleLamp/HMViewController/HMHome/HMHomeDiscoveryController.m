@@ -73,21 +73,21 @@
         forCellWithReuseIdentifier:HOME_CELL_IDENTIFIER];
     [_collectionView registerClass:[HMHomeCollectionAdCell class]
         forCellWithReuseIdentifier:HOME_CELL_AD_IDENTIFIER];
-    [_collectionView registerClass:[HMHomeWaterFlowHeaderView class]
-        forSupplementaryViewOfKind:CHTCollectionElementKindSectionHeader
-               withReuseIdentifier:HOME_HEADER_IDENTIFIER];
-    [_collectionView registerClass:[CHTCollectionViewWaterfallFooter class]
-        forSupplementaryViewOfKind:CHTCollectionElementKindSectionFooter
-               withReuseIdentifier:HOME_FOOTER_IDENTIFIER];
+//    [_collectionView registerClass:[HMHomeWaterFlowHeaderView class]
+//        forSupplementaryViewOfKind:CHTCollectionElementKindSectionHeader
+//               withReuseIdentifier:HOME_HEADER_IDENTIFIER];
+//    [_collectionView registerClass:[CHTCollectionViewWaterfallFooter class]
+//        forSupplementaryViewOfKind:CHTCollectionElementKindSectionFooter
+//               withReuseIdentifier:HOME_FOOTER_IDENTIFIER];
     [self.view addSubview:_collectionView];
     
-    _collectionView.mj_header = [MJRefreshJBHeader headerWithRefreshingTarget:self refreshingAction:@selector(refrushHeaderData)];
+//    _collectionView.mj_header = [MJRefreshJBHeader headerWithRefreshingTarget:self refreshingAction:@selector(refrushHeaderData)];
     
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return _recommendArray.count;
+    return _dataArray.count;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -95,7 +95,7 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *dict = [_recommendArray objectAtIndex:indexPath.row];
+    NSDictionary *dict = [_dataArray objectAtIndex:indexPath.row];
     CGFloat width = [[dict stringValueForKey:@"width"] floatValue];
     CGFloat height = [[dict stringValueForKey:@"height"] floatValue];
     NSInteger is_ad = [[dict stringValueForKey:@"is_ad"] integerValue];
@@ -108,13 +108,13 @@
             return CGSizeMake(HomeCollectionCell_width, actualHeight);
         }
     }else{
-        
-        return [HMHomeCollectionCell getCollectionCellSizeWithInformation:dict];
+        return CGSizeMake(100, 100);
+        //return [HMHomeCollectionCell getCollectionCellSizeWithInformation:dict];
     }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *dict = [_recommendArray objectAtIndex:indexPath.row];
+    NSDictionary *dict = [_dataArray objectAtIndex:indexPath.row];
     NSInteger is_ad = [[dict stringValueForKey:@"is_ad"] integerValue];
     UIColor *color = [self getRadomColor:indexPath.row];
     
@@ -133,10 +133,10 @@
         (HMHomeCollectionCell *)[collectionView dequeueReusableCellWithReuseIdentifier:HOME_CELL_IDENTIFIER forIndexPath:indexPath];
         
         
-        [cell reloadWithInformation:dict];
-        cell.bigImage.backgroundColor = color;
-        
-        [cell.praiseView addTarget:self action:@selector(clickPraise:) forControlEvents:UIControlEventTouchUpInside];
+//        [cell reloadWithInformation:dict];
+//        cell.bigImage.backgroundColor = color;
+//
+//        [cell.praiseView addTarget:self action:@selector(clickPraise:) forControlEvents:UIControlEventTouchUpInside];
         
         
         return cell;

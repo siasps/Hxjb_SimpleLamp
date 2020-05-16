@@ -49,7 +49,6 @@
 		74BBBA662469879700C3995F /* DotCountLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BBB9AF2469879700C3995F /* DotCountLabel.m */; };
 		74BBBA672469879700C3995F /* KIImageCropperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BBB9B22469879700C3995F /* KIImageCropperView.m */; };
 		74BBBA682469879700C3995F /* CHTCollectionViewWaterfallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BBB9B62469879700C3995F /* CHTCollectionViewWaterfallCell.m */; };
-		74BBBA692469879700C3995F /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BBB9B92469879700C3995F /* CHTCollectionViewWaterfallLayout.m */; };
 		74BBBA6A2469879700C3995F /* CHTCollectionViewWaterfallHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BBB9BB2469879700C3995F /* CHTCollectionViewWaterfallHeader.m */; };
 		74BBBA6B2469879700C3995F /* CHTCollectionViewWaterfallFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BBB9BC2469879700C3995F /* CHTCollectionViewWaterfallFooter.m */; };
 		74BBBA6C2469879700C3995F /* HMLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BBB9BE2469879700C3995F /* HMLoadingView.m */; };
@@ -209,11 +208,9 @@
 		74BBB9B62469879700C3995F /* CHTCollectionViewWaterfallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallCell.m; sourceTree = "<group>"; };
 		74BBB9B72469879700C3995F /* CHTCollectionViewWaterfallFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallFooter.h; sourceTree = "<group>"; };
 		74BBB9B82469879700C3995F /* CHTCollectionViewWaterfallHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallHeader.h; sourceTree = "<group>"; };
-		74BBB9B92469879700C3995F /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
 		74BBB9BA2469879700C3995F /* CHTCollectionViewWaterfallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallCell.h; sourceTree = "<group>"; };
 		74BBB9BB2469879700C3995F /* CHTCollectionViewWaterfallHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallHeader.m; sourceTree = "<group>"; };
 		74BBB9BC2469879700C3995F /* CHTCollectionViewWaterfallFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallFooter.m; sourceTree = "<group>"; };
-		74BBB9BD2469879700C3995F /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
 		74BBB9BE2469879700C3995F /* HMLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMLoadingView.m; sourceTree = "<group>"; };
 		74BBB9C02469879700C3995F /* KIWindowImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIWindowImageItem.m; sourceTree = "<group>"; };
 		74BBB9C12469879700C3995F /* UIImage+blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+blur.m"; sourceTree = "<group>"; };
@@ -629,14 +626,12 @@
 		74BBB9B52469879700C3995F /* HMWaterFlow */ = {
 			isa = PBXGroup;
 			children = (
+				74BBB9BA2469879700C3995F /* CHTCollectionViewWaterfallCell.h */,
 				74BBB9B62469879700C3995F /* CHTCollectionViewWaterfallCell.m */,
 				74BBB9B72469879700C3995F /* CHTCollectionViewWaterfallFooter.h */,
-				74BBB9B82469879700C3995F /* CHTCollectionViewWaterfallHeader.h */,
-				74BBB9B92469879700C3995F /* CHTCollectionViewWaterfallLayout.m */,
-				74BBB9BA2469879700C3995F /* CHTCollectionViewWaterfallCell.h */,
-				74BBB9BB2469879700C3995F /* CHTCollectionViewWaterfallHeader.m */,
 				74BBB9BC2469879700C3995F /* CHTCollectionViewWaterfallFooter.m */,
-				74BBB9BD2469879700C3995F /* CHTCollectionViewWaterfallLayout.h */,
+				74BBB9B82469879700C3995F /* CHTCollectionViewWaterfallHeader.h */,
+				74BBB9BB2469879700C3995F /* CHTCollectionViewWaterfallHeader.m */,
 			);
 			path = HMWaterFlow;
 			sourceTree = "<group>";
@@ -1199,7 +1194,6 @@
 				74BBBA732469879700C3995F /* SFHFKeychainUtils.m in Sources */,
 				74BBBA802469879700C3995F /* ZXPUnicode.m in Sources */,
 				74BBBA9B2469879800C3995F /* NSMutableDictionary+KIAdditions.m in Sources */,
-				74BBBA692469879700C3995F /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				74BBBAB52469957D00C3995F /* BaseTableViewCell.m in Sources */,
 				74BBBAB72469957D00C3995F /* HMViewController.m in Sources */,
 				74BBBA712469879700C3995F /* Reachability.m in Sources */,

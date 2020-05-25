@@ -35,7 +35,7 @@ DEPENDENCIES:
   - YYModel
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AFNetworking
     - CYLTabBarController
     - KMNavigationBarTransition
@@ -55,4 +55,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ccfe2f7408e8830d327f7b2182891c7cf300b34b
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.1
